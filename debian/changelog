@@ -1,0 +1,63 @@
+node-pbkdf2 (3.1.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto test & install
+  * Drop unneeded version constraints from (build) dependencies
+  * Embed typescript definitions
+  * New upstream version 3.1.1
+  * Update lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 27 Nov 2020 17:25:39 +0100
+
+node-pbkdf2 (3.0.16-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Drop patches, merged upstream
+  * Bump compat and policy.
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 16 May 2018 18:28:27 +0200
+
+node-pbkdf2 (3.0.14-2) unstable; urgency=medium
+
+  * Team upload
+  * Patch to fix default digest missing in node 8
+  * Section: javascript
+  * Standards-Version: 4.1.2
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 30 Dec 2017 16:46:05 +0100
+
+node-pbkdf2 (3.0.14-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 14 Sep 2017 21:15:38 +0200
+
+node-pbkdf2 (3.0.13-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Bump compat and policy
+  * Modernize rules
+  * Fix autopkg testsuite
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 20 Aug 2017 19:25:47 +0200
+
+node-pbkdf2 (3.0.9-1) unstable; urgency=low
+
+  * Initial release (Closes: #862034)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 07 May 2017 22:05:28 +0530

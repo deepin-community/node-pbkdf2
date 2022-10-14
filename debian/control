@@ -1,0 +1,37 @@
+Source: node-pbkdf2
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-create-hash <!nocheck>
+ , node-create-hmac <!nocheck>
+ , node-ripemd160 <!nocheck>
+ , node-safe-buffer <!nocheck>
+ , node-sha.js <!nocheck>
+ , node-tap (>= 8) <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-pbkdf2
+Vcs-Git: https://salsa.debian.org/js-team/node-pbkdf2.git
+Homepage: https://github.com/crypto-browserify/pbkdf2
+Rules-Requires-Root: no
+
+Package: node-pbkdf2
+Architecture: all
+Depends: ${misc:Depends}
+ , node-create-hash
+ , node-create-hmac
+ , node-ripemd160
+ , node-safe-buffer
+ , node-sha.js
+ , nodejs
+Provides: ${nodejs:Provides}
+Description: RSA PKCS
+ This library implements the password-based key derivation function, PBKDF2,
+ specified in RSA PKCS
+ algorithm returned from crypto.getHashes().
+ .
+ Node.js is an event-based server-side JavaScript engine.
