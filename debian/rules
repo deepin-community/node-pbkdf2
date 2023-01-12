@@ -4,5 +4,12 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# Increase dh_auto_test timeout for slow arch
+# https://bugs.debian.org/987370
+include /usr/share/dpkg/architecture.mk
+ifeq ($(DEB_BUILD_ARCH),armhf)
+  export TAP_TIMEOUT=50
+endif
+
 %:
 	dh $@

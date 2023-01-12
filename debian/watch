@@ -1,10 +1,10 @@
 version=4
 opts=\
 dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-pbkdf2-$1.tar.gz/ \
- https://github.com/crypto-browserify/pbkdf2/tags .*/archive/v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-pbkdf2-$1/ \
+ https://github.com/crypto-browserify/pbkdf2/tags .*/archive/.*/v?([\d\.]+).tar.gz
 
 # It is not recommended use npmregistry. Please investigate more.
 # Take a look at https://wiki.debian.org/debian/watch/
-opts="searchmode=plain,component=types-pbkdf2,pgpmode=none" \
+opts="searchmode=plain,ctype=nodejs,component=types-pbkdf2,pgpmode=none" \
  https://registry.npmjs.org/@types/pbkdf2 https://registry.npmjs.org/@types/pbkdf2/-/pbkdf2-([\d\.]+)@ARCHIVE_EXT@ ignore
