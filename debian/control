@@ -11,9 +11,8 @@ Build-Depends: debhelper-compat (= 13)
  , node-ripemd160 <!nocheck>
  , node-safe-buffer <!nocheck>
  , node-sha.js <!nocheck>
- , node-tap (>= 8) <!nocheck>
  , node-tape <!nocheck>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-pbkdf2
 Vcs-Git: https://salsa.debian.org/js-team/node-pbkdf2.git
 Homepage: https://github.com/crypto-browserify/pbkdf2
@@ -27,7 +26,6 @@ Depends: ${misc:Depends}
  , node-ripemd160
  , node-safe-buffer
  , node-sha.js
- , nodejs
 Provides: ${nodejs:Provides}
 Description: RSA PKCS
  This library implements the password-based key derivation function, PBKDF2,

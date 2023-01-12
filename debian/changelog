@@ -1,3 +1,48 @@
+node-pbkdf2 (3.1.2-3) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Drop ripemd160 test, not supported by OpenSSL 3 (Closes: #1011917)
+
+ -- Yadd <yadd@debian.org>  Wed, 01 Jun 2022 12:44:11 +0200
+
+node-pbkdf2 (3.1.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Improve big endian patch
+  * Fix big endian patch (Closes: #1004077)
+  * Use directly tape for test
+
+ -- Yadd <yadd@debian.org>  Wed, 26 Jan 2022 18:48:24 +0100
+
+node-pbkdf2 (3.1.2-1) unstable; urgency=medium
+
+  * Team upload
+  * Report patch to upstream
+  * New upstream version 3.1.2
+
+ -- Yadd <yadd@debian.org>  Thu, 20 Jan 2022 09:04:27 +0100
+
+node-pbkdf2 (3.1.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Dylan Aïssi ]
+  * Increase dh_auto_test timeout for slow arch (Closes: #987370)
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+
+  [ Yadd ]
+  * Add ctype=nodejs to component(s)
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Add patch for Big-Endian platforms
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Wed, 19 Jan 2022 18:40:19 +0100
+
 node-pbkdf2 (3.1.1-1) unstable; urgency=medium
 
   * Team upload
