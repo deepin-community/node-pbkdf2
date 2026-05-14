@@ -1,2 +1,3 @@
 big-endian.patch
 disable-ripemd160-test.patch
+CVE-2025-6545-6547.patch

@@ -1,0 +1,17 @@
+Description: disable ripemd160 test, not supported by OpenSSL 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1011917
+Forwarded: no
+Last-Update: 2022-06-01
+
+--- a/test/index.js
++++ b/test/index.js
+@@ -121,7 +121,7 @@
+     }, /Salt must be a string, a Buffer, a typed array or a DataView/)
+   })
+ 
+-  var algos = ['sha1', 'sha224', 'sha256', 'sha384', 'sha512', 'ripemd160']
++  var algos = ['sha1', 'sha224', 'sha256', 'sha384', 'sha512']
+   algos.forEach(function (algorithm) {
+     fixtures.valid.forEach(function (f) {
+       var key, keyType, salt, saltType
